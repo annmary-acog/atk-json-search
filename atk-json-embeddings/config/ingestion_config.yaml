@@ -1,0 +1,5 @@
+EMBED_MODEL: "HUGGINGFACE"
+MODEL_NAME: "all-MiniLM-L6-v2"
+VECTOR_DB: "FAISS"
+CONTENT: "abstract"
+METADATA_KEYS: ["title", "url"]

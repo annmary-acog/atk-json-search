@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "atk-json-embeddings"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "atk_json_embeddings"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+langchain = "^0.0.163"
+typer = "^0.9.0"
+jq = "^1.4.1"
+sentence-transformers = "^2.2.2"
+openai = "0.27.5"
+tiktoken = "^0.4.0"
+atk-embeddings = "^0.4.0"
+aganitha-base-utils = "^0.1.7"
+instructorembedding = "^1.0.0"
+
+[[tool.poetry.source]]
+name = "dev"
+url = "https://dev-pypi.aganitha.ai/"
+default = false
+secondary = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+atk-json-pipeline ="atk_json_embeddings.run_pipeline:main"
